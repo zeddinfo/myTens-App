@@ -49,6 +49,9 @@ function App() {
          return <ListCard item={item}/>
        }) : <div style={{alignContent: 'center', justifyContent: 'center', alignItems: 'center'}}><p>Data tidak ditemukan</p></div>}
 
+<div style={{padding: 30, alignContent: 'center', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}} onClick={() => setPage((c) => c+1)}>
+         <p>Load More</p>
+       </div>
     </div>
     </div>
   );
